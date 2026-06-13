@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hortensias con Propósito</title>
+    <link rel="stylesheet" href="EstilosPagina.css">
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <header class="encabezado">
+        <div class="logo">
+            <span>🌱</span>
+            <div>
+                <h1>Hortensias con Propósito</h1>
+                <p>Flores que transforman vidas</p>
+            </div>
+        </div>
+
+        <button class="btn-carrito">
+            🛒
+        </button>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+
+        <!-- Banner inicial -->
+        <section class="hero">
+            <div class="contenido-hero">
+                <h2>Más que flores, un gesto de amor</h2>
+
+                <p>
+                    Con cada compra, contribuyes a llevar alegría a quienes más lo necesitan.
+                    Apoyamos cultivadores locales y donamos arreglos a adultos mayores,
+                    pacientes y familias en situación difícil.
+                </p>
+
+                <div class="botones-hero">
+                    <button>♡ Impacto Social</button>
+                    <button>👥 Cultivadores Locales</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de productos -->
+        <section class="productos">
+            <h2>Nuestros Productos</h2>
+
+            <div class="contenedor-productos">
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&w=900&q=80" alt="Hortensia azul clásica">
+                    <span>Individual</span>
+                    <h3>Hortensia Azul Clásica</h3>
+                    <p>Hermosas hortensias azules frescas, perfectas para cualquier ocasión.</p>
+                    <h4>$35.000 COP</h4>
+                    <button class="agregar-carrito" data-nombre="Hortensia Azul Clásica" data-precio="35000">
+                        🛒 Agregar
+                    </button>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=900&q=80" alt="Hortensia púrpura premium">
+                    <span>Individual</span>
+                    <h3>Hortensia Púrpura Premium</h3>
+                    <p>Elegantes hortensias púrpuras de cultivadores locales.</p>
+                    <h4>$42.000 COP</h4>
+                    <button class="agregar-carrito" data-nombre="Hortensia Púrpura Premium" data-precio="42000">
+                        🛒 Agregar
+                    </button>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=900&q=80" alt="Arreglo mixto de hortensias">
+                    <span>Arreglo</span>
+                    <h3>Arreglo Mixto Deluxe</h3>
+                    <p>Combinación de hortensias blancas y púrpuras en arreglo especial.</p>
+                    <h4>$65.000 COP</h4>
+                    <button class="agregar-carrito" data-nombre="Arreglo Mixto Deluxe" data-precio="65000">
+                        🛒 Agregar
+                    </button>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80" alt="Hortensia rosa romántica">
+                    <span>Individual</span>
+                    <h3>Hortensia Rosa Romántica</h3>
+                    <p>Delicadas hortensias rosadas ideales para regalos especiales.</p>
+                    <h4>$38.000 COP</h4>
+                    <button class="agregar-carrito" data-nombre="Hortensia Rosa Romántica" data-precio="38000">
+                        🛒 Agregar
+                    </button>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=900&q=80" alt="Hortensia blanca pureza">
+                    <span>Individual</span>
+                    <h3>Hortensia Blanca Pureza</h3>
+                    <p>Puras hortensias blancas para momentos especiales.</p>
+                    <h4>$40.000 COP</h4>
+                    <button class="agregar-carrito" data-nombre="Hortensia Blanca Pureza" data-precio="40000">
+                        🛒 Agregar
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Sección de impacto social -->
+        <section class="impacto">
+            <h2>Tu Impacto en la Comunidad</h2>
+
+            <p>
+                Cada compra genera un cambio positivo. Aquí puedes ver cómo tus elecciones
+                transforman vidas en nuestra comunidad.
+            </p>
+
+            <div class="estadisticas">
+
+                <div class="tarjeta-impacto">
+                    <h3>📈 Total en tu carrito</h3>
+                    <p id="total-carrito">$0</p>
+                    <span>Pesos Colombianos</span>
+                </div>
+
+                <div class="tarjeta-impacto">
+                    <h3>♡ Donación solidaria</h3>
+                    <p id="donacion">$0</p>
+                    <span>10% de tu compra</span>
+                </div>
+
+                <div class="tarjeta-impacto">
+                    <h3>🎁 Arreglos a donar</h3>
+                    <p id="arreglos-donar">0</p>
+                    <span>Arreglos florales</span>
+                </div>
+
+                <div class="tarjeta-impacto">
+                    <h3>👥 Cultivadores locales</h3>
+                    <p id="cultivadores">0</p>
+                    <span>Familias beneficiadas</span>
+                </div>
+
+            </div>
+
+            <div class="informacion-impacto">
+
+                <article>
+                    <h3>♡ Donaciones</h3>
+                    <p>
+                        Llevamos alegría a adultos mayores, pacientes y familias en situación
+                        difícil con arreglos florales que alegran sus días.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>👥 Cultivadores Locales</h3>
+                    <p>
+                        Trabajamos directamente con productores de la región, garantizando precios
+                        justos y apoyando la economía local.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>🎁 Campañas Solidarias</h3>
+                    <p>
+                        Por cada 2 arreglos vendidos, donamos 1 a hospitales, hogares geriátricos
+                        y centros comunitarios.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <h2>🌱 Hortensias con Propósito</h2>
+        <p>Flores que transforman vidas y embellecen momentos.</p>
+        <p>© 2026 Hortensias con Propósito. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="Paginafuncional.js"></script>
+</body>
+</html>
