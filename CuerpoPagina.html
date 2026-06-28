@@ -38,20 +38,20 @@
                 </p>
 
                 <div class="botones-hero">
-                    <button>♡ Impacto Social</button>
-                    <button>👥 Cultivadores Locales</button>
+                    <button id="btn-ir-impacto" type="button">♡ Impacto Social</button>
+                    <button id="btn-ir-cultivadores" type="button">👥 Cultivadores Locales</button>
                 </div>
             </div>
         </section>
 
         <!-- Sección de productos -->
-        <section class="productos">
+        <section class="productos" id="seccion-productos">
             <h2>Nuestros Productos</h2>
 
             <div class="contenedor-productos">
 
                 <article class="producto">
-                    <img src="https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&w=900&q=80" alt="Hortensia azul clásica">
+                    <img src="https://images.unsplash.com/photo-1455656678494-4d1b5f3e7ad1?auto=format&fit=crop&w=1200&q=80" alt="Hortensia azul clásica">
                     <span>Individual</span>
                     <h3>Hortensia Azul Clásica</h3>
                     <p>Hermosas hortensias azules frescas, perfectas para cualquier ocasión.</p>
@@ -62,7 +62,7 @@
                 </article>
 
                 <article class="producto">
-                    <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=900&q=80" alt="Hortensia púrpura premium">
+                    <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?auto=format&fit=crop&w=1200&q=80" alt="Hortensia púrpura premium">
                     <span>Individual</span>
                     <h3>Hortensia Púrpura Premium</h3>
                     <p>Elegantes hortensias púrpuras de cultivadores locales.</p>
@@ -73,7 +73,7 @@
                 </article>
 
                 <article class="producto">
-                    <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=900&q=80" alt="Arreglo mixto de hortensias">
+                    <img src="https://images.unsplash.com/photo-1470509037663-253afd7f0f51?auto=format&fit=crop&w=1200&q=80" alt="Arreglo mixto de hortensias">
                     <span>Arreglo</span>
                     <h3>Arreglo Mixto Deluxe</h3>
                     <p>Combinación de hortensias blancas y púrpuras en arreglo especial.</p>
@@ -84,7 +84,7 @@
                 </article>
 
                 <article class="producto">
-                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80" alt="Hortensia rosa romántica">
+                    <img src="https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&w=1200&q=80" alt="Hortensia rosa romántica">
                     <span>Individual</span>
                     <h3>Hortensia Rosa Romántica</h3>
                     <p>Delicadas hortensias rosadas ideales para regalos especiales.</p>
@@ -95,7 +95,7 @@
                 </article>
 
                 <article class="producto">
-                    <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=900&q=80" alt="Hortensia blanca pureza">
+                    <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=1200&q=80" alt="Hortensia blanca pureza">
                     <span>Individual</span>
                     <h3>Hortensia Blanca Pureza</h3>
                     <p>Puras hortensias blancas para momentos especiales.</p>
@@ -109,7 +109,7 @@
         </section>
 
         <!-- Sección de impacto social -->
-        <section class="impacto">
+        <section class="impacto" id="seccion-impacto">
             <h2>Tu Impacto en la Comunidad</h2>
 
             <p>
@@ -155,7 +155,7 @@
                     </p>
                 </article>
 
-                <article>
+                <article id="seccion-cultivadores">
                     <h3>👥 Cultivadores Locales</h3>
                     <p>
                         Trabajamos directamente con productores de la región, garantizando precios
@@ -172,6 +172,24 @@
                 </article>
 
             </div>
+        </section>
+
+        <section class="resumen-carrito" id="seccion-carrito">
+            <h2>Resumen de tu pedido</h2>
+            <p class="texto-resumen">
+                Revisa los productos agregados antes de confirmar tu compra.
+            </p>
+
+            <ul id="lista-carrito" class="lista-carrito">
+                <li class="vacio">Aún no has agregado productos.</li>
+            </ul>
+
+            <div class="acciones-carrito">
+                <button id="btn-confirmar" type="button">✅ Confirmar compra</button>
+                <button id="btn-vaciar" type="button">🧹 Vaciar carrito</button>
+            </div>
+
+            <p id="mensaje-estado" class="mensaje-estado" aria-live="polite"></p>
         </section>
 
     </main>
