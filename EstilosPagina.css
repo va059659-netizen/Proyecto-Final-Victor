@@ -18,6 +18,12 @@ body{
   align-items:center;
 }
 
+.acciones-header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
 .logo{
   display:flex;
   gap:12px;
@@ -355,6 +361,29 @@ body{
 .btn-carrito:hover,
 .botones-hero button:hover{
   opacity:0.9;
+}
+
+.btn-whatsapp{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  text-decoration:none;
+  background:#25D366;
+  box-shadow:0 6px 18px rgba(37,211,102,0.35);
+}
+
+.btn-whatsapp svg{
+  width:36px;
+  height:36px;
+  display:block;
+}
+
+.btn-whatsapp:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 22px rgba(37,211,102,0.45);
 }
 
 .mensaje-estado{
