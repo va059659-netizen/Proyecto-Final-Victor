@@ -143,9 +143,9 @@ btnConfirmar.addEventListener("click", function(){
   };
 
   localStorage.setItem("pedidoHortensias", JSON.stringify(pedido));
-  mostrarMensaje("Redirigiendo al checkout para finalizar la compra...", "exito");
+  mostrarMensaje("Redirigiendo al ZonaPago para finalizar la compra...", "exito");
 
   setTimeout(function(){
-    window.location.href = "checkout.html";
+    window.location.href = "ZonaPago.html";
   }, 700);
 });
