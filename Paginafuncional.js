@@ -126,11 +126,26 @@ btnConfirmar.addEventListener("click", function(){
     return;
   }
 
-  const arreglosSolidarios = Math.floor(cantidad / 2);
-  const aporte = Math.floor(total * 0.10);
+  const items = Object.keys(carrito).map(function(nombre){
+    return {
+      nombre: nombre,
+      cantidad: carrito[nombre].cantidad,
+      subtotal: carrito[nombre].subtotal
+    };
+  });
 
-  mostrarMensaje(
-    `Compra confirmada: ${cantidad} producto(s), aporte solidario de ${formatearCOP(aporte)} y ${arreglosSolidarios} arreglo(s) para campaña.`,
-    "exito"
-  );
+  const pedido = {
+    items: items,
+    total: total,
+    donacion: Math.floor(total * 0.10),
+    arreglosSolidarios: Math.floor(cantidad / 2),
+    fecha: new Date().toISOString()
+  };
+
+  localStorage.setItem("pedidoHortensias", JSON.stringify(pedido));
+  mostrarMensaje("Redirigiendo al checkout para finalizar la compra...", "exito");
+
+  setTimeout(function(){
+    window.location.href = "checkout.html";
+  }, 700);
 });

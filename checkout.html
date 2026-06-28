@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Hortensias con Propósito</title>
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <main class="checkout">
+    <section class="panel">
+      <h1>Finalizar compra</h1>
+      <p>Completa tus datos para procesar tu pedido de forma segura (simulación académica).</p>
+
+      <div class="resumen" id="resumen-checkout"></div>
+
+      <form id="form-checkout" novalidate>
+        <h2>Datos personales</h2>
+        <div class="grid">
+          <label>Nombre completo
+            <input type="text" id="nombre" required>
+          </label>
+          <label>Correo electrónico
+            <input type="email" id="correo" required>
+          </label>
+          <label>Documento
+            <input type="text" id="documento" required>
+          </label>
+          <label>Teléfono
+            <input type="tel" id="telefono" required>
+          </label>
+          <label class="full">Dirección
+            <input type="text" id="direccion" required>
+          </label>
+        </div>
+
+        <h2>Datos de pago</h2>
+        <div class="grid">
+          <label class="full">Nombre en la tarjeta
+            <input type="text" id="titular" required>
+          </label>
+          <label>Número de tarjeta
+            <input type="text" id="tarjeta" maxlength="19" placeholder="0000 0000 0000 0000" required>
+          </label>
+          <label>Vencimiento
+            <input type="text" id="vencimiento" placeholder="MM/AA" maxlength="5" required>
+          </label>
+          <label>CVV
+            <input type="password" id="cvv" maxlength="4" required>
+          </label>
+          <label>Tipo de tarjeta
+            <select id="tipo" required>
+              <option value="">Selecciona</option>
+              <option>Crédito</option>
+              <option>Débito</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="acciones">
+          <button type="button" id="btn-volver">← Volver a productos</button>
+          <button type="submit" id="btn-pagar">Pagar pedido</button>
+        </div>
+        <p id="mensaje" class="mensaje" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <script src="checkout.js"></script>
+</body>
+</html>

@@ -12,7 +12,25 @@
     <!--- Encabezado principal ----->
     <header class="encabezado">
         <div class="logo">
-            <span>🌱</span>
+            <svg class="logo-icono" viewBox="0 0 64 64" aria-hidden="true">
+                <defs>
+                    <linearGradient id="gradLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#9f67ff"></stop>
+                        <stop offset="100%" stop-color="#3b82f6"></stop>
+                    </linearGradient>
+                </defs>
+                <rect width="64" height="64" rx="14" fill="#f5f3ff"></rect>
+                <g transform="translate(8,8)">
+                    <ellipse cx="24" cy="10" rx="8" ry="10" fill="url(#gradLogo)"></ellipse>
+                    <ellipse cx="38" cy="18" rx="8" ry="10" fill="url(#gradLogo)" transform="rotate(40 38 18)"></ellipse>
+                    <ellipse cx="38" cy="32" rx="8" ry="10" fill="url(#gradLogo)" transform="rotate(80 38 32)"></ellipse>
+                    <ellipse cx="24" cy="40" rx="8" ry="10" fill="url(#gradLogo)"></ellipse>
+                    <ellipse cx="10" cy="32" rx="8" ry="10" fill="url(#gradLogo)" transform="rotate(-80 10 32)"></ellipse>
+                    <ellipse cx="10" cy="18" rx="8" ry="10" fill="url(#gradLogo)" transform="rotate(-40 10 18)"></ellipse>
+                    <circle cx="24" cy="24" r="8" fill="white"></circle>
+                    <path d="M24 22c-2.7-4.1-10-2.6-10 3.2 0 4.4 4.8 7.1 10 11.2 5.2-4.1 10-6.8 10-11.2 0-5.8-7.3-7.3-10-3.2z" fill="#ef4444"></path>
+                </g>
+            </svg>
             <div>
                 <h1>Hortensias con Propósito</h1>
                 <p>Flores que transforman vidas</p>
@@ -42,6 +60,28 @@
                     <button id="btn-ir-impacto" type="button">♡ Impacto Social</button>
                     <button id="btn-ir-cultivadores" type="button">👥 Cultivadores Locales</button>
                 </div>
+            </div>
+        </section>
+
+        <section class="empresa" id="seccion-empresa">
+            <h2>Nuestra empresa</h2>
+            <div class="empresa-grid">
+                <article>
+                    <h3>Misión</h3>
+                    <p>
+                        Ofrecer hortensias y arreglos florales de alta calidad, conectando a cada cliente
+                        con una compra significativa que fortalece campañas solidarias y el trabajo de
+                        cultivadores locales.
+                    </p>
+                </article>
+                <article>
+                    <h3>Visión</h3>
+                    <p>
+                        Ser una floristería referente en impacto social, reconocida por transformar cada
+                        pedido en bienestar comunitario, apoyo sostenible al campo y experiencias memorables
+                        para nuestros clientes.
+                    </p>
+                </article>
             </div>
         </section>
 
@@ -102,6 +142,39 @@
                     <p>Puras hortensias blancas para momentos especiales.</p>
                     <h4>$40.000 COP</h4>
                     <button class="agregar-carrito" data-nombre="Hortensia Blanca Pureza" data-precio="40000">
+                        🛒 Agregar
+                    </button>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1467533003447-e295ff1b0435?auto=format&fit=crop&w=1200&q=80" alt="Hortensia lavanda elegante">
+                    <span>Edición especial</span>
+                    <h3>Hortensia Lavanda Elegante</h3>
+                    <p>Ramo de hortensias lavanda con empaque premium para ocasiones especiales.</p>
+                    <h4>$48.000 COP</h4>
+                    <button class="agregar-carrito" data-nombre="Hortensia Lavanda Elegante" data-precio="48000">
+                        🛒 Agregar
+                    </button>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?auto=format&fit=crop&w=1200&q=80" alt="Bouquet hortensias sunset">
+                    <span>Arreglo</span>
+                    <h3>Bouquet Hortensias Sunset</h3>
+                    <p>Combinación cálida de hortensias y follajes para regalar con mensaje personalizado.</p>
+                    <h4>$58.000 COP</h4>
+                    <button class="agregar-carrito" data-nombre="Bouquet Hortensias Sunset" data-precio="58000">
+                        🛒 Agregar
+                    </button>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?auto=format&fit=crop&w=1200&q=80" alt="Canasta hortensias premium">
+                    <span>Premium</span>
+                    <h3>Canasta Hortensias Premium</h3>
+                    <p>Canasta floral con hortensias seleccionadas, ideal para celebraciones y aniversarios.</p>
+                    <h4>$72.000 COP</h4>
+                    <button class="agregar-carrito" data-nombre="Canasta Hortensias Premium" data-precio="72000">
                         🛒 Agregar
                     </button>
                 </article>
