@@ -1,27 +1,38 @@
-# TODO - Hortensias con Propósito
+# TODO - Hortensias con Propósito (Mejoras solicitadas)
 
-- [x] 1. Actualizar estructura HTML para funcionalidad completa
-  - [x] Agregar anclas/IDs para navegación de botones del hero
-  - [x] Agregar sección de resumen/listado del carrito
-  - [x] Agregar botones funcionales (confirmar compra y vaciar carrito)
-  - [x] Ajustar textos para tono natural de presentación académica
-  - [x] Reemplazar imágenes por hortensias (incluida la que aparece como libros)
+- [ ] 1. Branding visual profesional
+  - [ ] Crear logo SVG profesional con enfoque social/animalista
+  - [ ] Integrar logo en encabezado
+  - [ ] Crear favicon SVG para pestaña del navegador
+  - [ ] Enlazar favicon en HTML
 
-- [x] 2. Mejorar estilos CSS (más humano, limpio y responsive)
-  - [x] Corregir escalas tipográficas exageradas
-  - [x] Mejorar tarjetas, botones, espacios y jerarquía visual
-  - [x] Añadir estados hover/focus y estilos de feedback
-  - [x] Ajustar responsive para móvil/tablet/escritorio
+- [ ] 2. Mejoras de UX e interacción
+  - [ ] Aumentar tamaño visual del botón carrito (mediano y claro)
+  - [ ] Asegurar cursor pointer en todos los elementos clicables
+  - [ ] Mejorar feedback visual al hover/click
 
-- [x] 3. Rehacer lógica JavaScript de interacción
-  - [x] Gestionar carrito con lista de productos y cantidades
-  - [x] Actualizar totales, donación y métricas de impacto correctamente
-  - [x] Validar confirmación de compra cuando no haya productos
-  - [x] Implementar vaciar carrito
-  - [x] Añadir mensajes de estado al usuario
+- [ ] 3. Contenido de negocio antes del catálogo
+  - [ ] Agregar sección "Nuestra empresa"
+  - [ ] Incluir misión del negocio
+  - [ ] Incluir visión del negocio
+  - [ ] Ilustrar visualmente la sección
 
-- [x] 4. Verificación funcional final
-  - [ ] Probar botones del hero
-  - [ ] Probar agregar productos
-  - [ ] Probar confirmar compra y vaciar carrito
-  - [ ] Verificar cálculos y render de indicadores
+- [ ] 4. Ampliación de catálogo
+  - [ ] Agregar 3 productos nuevos de hortensias
+  - [ ] Verificar imágenes coherentes con hortensias
+  - [ ] Ajustar datos de nombre, descripción y precio
+
+- [ ] 5. Flujo de compra tipo e-commerce (simulado)
+  - [ ] Crear página checkout.html
+  - [ ] Crear estilos checkout.css
+  - [ ] Crear lógica checkout.js
+  - [ ] Redirigir desde “Confirmar compra” al checkout
+  - [ ] Guardar resumen de pedido en localStorage
+  - [ ] Validar formulario de datos personales y pago
+  - [ ] Simular pago exitoso y limpiar carrito
+
+- [ ] 6. Pruebas finales
+  - [ ] Probar navegación y botones
+  - [ ] Probar carrito y cálculos
+  - [ ] Probar redirección y formulario de checkout
+  - [ ] Probar vista responsive general
